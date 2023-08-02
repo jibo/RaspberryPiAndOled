@@ -16,7 +16,7 @@ public class Test {
         int width = image.getWidth();
         int height = image.getHeight();
 
-        BufferedImage grayImage = new BufferedImage(width, height, BufferedImage.TYPE_BYTE_BINARY);//重点，技巧在这个参数BufferedImage.TYPE_BYTE_BINARY
+        BufferedImage grayImage = new BufferedImage(width, height, BufferedImage.TYPE_BYTE_BINARY);
         for(int i= 0 ; i < width ; i++){
             for(int j = 0 ; j < height; j++){
                 int rgb = image.getRGB(i, j);
