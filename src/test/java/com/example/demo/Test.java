@@ -55,7 +55,6 @@ public class Test {
         for (int i = 1; i <= 4590; i++) {
             Frame frame = grabber.grabImage();
             BufferedImage badApple = converter.convert(frame);
-//            ImageIO.write(badApple, "jpg", new File("D:\\MinecraftModProject\\picture\\1" + i + ".jpg"));
             binaryImage(badApple,i);
         }
         grabber.stop();
